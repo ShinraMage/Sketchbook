@@ -8,15 +8,21 @@ def convert_png_to_jpg(root_folder):
             if filename.endswith(".png"):
                 png_path = os.path.join(dirpath, filename)
                 
-                # Clip the first 40 letters from the filename
+                # Clip the first 30 characters from the filename
                 new_filename = filename[:30]
                 
                 # Use the new_filename for the jpg_path
                 jpg_path = os.path.join(dirpath, new_filename[:-4] + ".jpg")
                 
                 with Image.open(png_path) as img:
-                    img = img.convert("RGB")  # Convert the image to RGB mode
-                    img.save(jpg_path, "JPEG")
+                    img = img.convert("RGBA")  # Convert the image to RGBA mode
+                    data = img.getdata()
+                    
+                    # Create a new image with white background
+                    new_img = Image.new("RGB", img.size, (0, 0, 0))
+                    new_img.paste(img, mask=img.split()[3])  # Use the alpha channel as a mask
+                    
+                    new_img.save(jpg_path, "JPEG")
 
 if __name__ == "__main__":
     root_folder = "./"
