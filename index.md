@@ -12,4 +12,7 @@ layout: page
     {{ post.content }}
 {%- endfor -%}
 
-[older posts](./all)
+<br>
+<br>
+
+[all history posts](./all)
