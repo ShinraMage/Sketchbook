@@ -3,14 +3,11 @@ layout: page
 ---
 
 
-{%- assign posts_to_display = site.posts | limit: 15 -%}
-{%- for post in posts_to_display -%}
+{%- for post in site.posts -%}
     <br>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
+    {{ post.title | escape }}
     </a>
     {{ post.content }}
 {%- endfor -%}
-
-[older posts](./all)
