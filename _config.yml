@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sketchbook of LatticeMage
+title: Sketchbook|LatticeMage
 email: latticemage@gmail.com
 
-baseurl: "/Sketchbook" # the subpath of your site, e.g. /blog
 url: "https://lattice.posetmage.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Sketchbook" # the subpath of your site, e.g. /blog
 
 description: latticemage/Sketchbook
 
