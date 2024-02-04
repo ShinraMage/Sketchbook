@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sketchbook of LatticeMage
+title: LatticeMage
 email: latticemage@gmail.com
-
-url: "https://lattice.posetmage.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/Sketchbook" # the subpath of your site, e.g. /blog
-description: latticemage/Sketchbook
+url: https://lattice.posetmage.com # the base hostname & protocol for your site, e.g. http://example.com
+description: Sketchbook
+baseurl: /Sketchbook # the subpath of your site, e.g. /blog
+repository: latticemage/Sketchbook
 
 social:
   - platform: envelope
@@ -50,6 +50,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
