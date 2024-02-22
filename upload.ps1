@@ -3,8 +3,13 @@ cd _includes
 cd ../
 
 cd _layouts
+./upload.ps1
+cd ../
+
+cd assets
 ./upload.bat
 cd ../
+
 
 git config --local user.name "LatticeMage"
 git config --local user.email "LatticeMage@users.noreply.github.com"
