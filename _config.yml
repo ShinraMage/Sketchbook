@@ -18,27 +18,39 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: LatticeMage
-email: latticemage@gmail.com
-url: https://lattice.posetmage.com # the base hostname & protocol for your site, e.g. http://example.com
-slogan: ΔS > 0
+title: ShinraMage
+email: shinra@posetmage.com
+url: https://shinra.posetmage.com # the base hostname & protocol for your site, e.g. http://example.com
+author: ShinraMage
+repository: ShinraMage/Sketchbook
 
-description: Sketchbook
-baseurl: /Sketchbook # the subpath of your site, e.g. /blog
-repository: latticemage/Sketchbook
+feed:
+  output: true
 
 social:
   - platform: envelope
-    url: mailto:lattice@posetmage.com
+    url: mailto:mail@posetmage.com
   - platform: youtube
-    url: https://youtube.com/@latticemage
+    url: https://youtube.com/@shinramage
   - platform: facebook
-    url: https://facebook.com/latticemage
+    url: https://facebook.com/shinramage
   - platform: twitter
-    url: https://twitter.com/latticemage
+    url: https://twitter.com/shinramage
+  - platform: line
+    url: https://line.me/ti/p/Out6J_7uOq
+  - platform: telegram
+    url: https://t.me/posetmage
+  - platform: twitch
+    url: https://twitch.tv/posetmage
 
 # Build settings
 remote_theme: jekyll/minima
+
+exclude:
+  - _includes/.git/
+  - _layouts/.git/
+  - _layouts/page/.git/
+  - assets/.git/
 
 minima:
   skin: dark

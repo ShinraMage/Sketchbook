@@ -10,10 +10,9 @@ cd assets
 ./upload.bat
 cd ../
 
-
-git config --local user.name "LatticeMage"
-git config --local user.email "LatticeMage@users.noreply.github.com"
-git remote set-url origin git@LM:LatticeMage/Sketchbook.git
+git config --local user.name "ShinraMage"
+git config --local user.email "shinra@posetmage.com"
+git remote set-url origin git@SH:ShinraMage/ShinraMage.github.io.git
 
 git submodule update --recursive --remote
 
